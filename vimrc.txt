@@ -1,0 +1,35 @@
+" -----------------------------------------------------------------------------
+"  Filename: ~/.vimrc
+"  Author: Ahsan, M
+"  Purpose: Set-up commonly used VIM config for OS X
+" ------------------------------------------------------------------------------
+
+" shows completion of command line commands, file names,etc in status line
+set wildmenu
+set wildmode=list:longest,full
+
+" show partial commands in last line mode
+set showcmd
+
+" always show current position
+set ruler
+
+" ignore case when searching,try to be smart about searching,hightlight search
+set ignorecase 
+set smartcase
+set hlsearch
+
+" enable syntax highlight
+syntax enable
+
+" display line number on the left
+set number
+
+" ------------------------------------------------------------------------------
+" Mappings: Ctrl-L
+" ------------------------------------------------------------------------------
+
+" redraw screen to also turn off search hightlight
+nmap <C-L> :nohl<CR>
+
+
